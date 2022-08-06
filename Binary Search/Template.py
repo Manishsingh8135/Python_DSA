@@ -9,9 +9,10 @@ def BinarySearch(nums,target):
             left=mid+1
         else:
             right=mid
+    print(left)
     return left
 
-arr=[2,3,4,5,6,7,8,9]
-target=3
+N=int(input())
+arr=list(map(int,input().split()))
+target=int(input())
 a=BinarySearch(arr,target)
-print(a)
